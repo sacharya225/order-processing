@@ -1,4 +1,5 @@
---upgrade pip
+pip
+setuptools
 flask
 ConfigParser
 MySQL-python
