@@ -1,4 +1,4 @@
-pip19.3.1
+--upgrade pip
 flask
 ConfigParser
 MySQL-python
