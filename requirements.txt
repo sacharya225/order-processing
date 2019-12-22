@@ -1,5 +1,2 @@
-pip
-setuptools
 flask
-ConfigParser
 MySQL-python
