@@ -10,7 +10,7 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return "Hi Python"
+    return "<h1>Hi Python!</h1>"
 
 	
 @app.route('/api/v1/users/all', methods=['GET'])
