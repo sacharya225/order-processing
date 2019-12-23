@@ -1,6 +1,7 @@
 import flask  
 from flask import request, jsonify
 import MySQLdb
+import os
 
 app = flask.Flask(__name__)  ##Create a flask application object
 app.config["DEBUG"] = True
@@ -9,7 +10,7 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Home Page for PO Creation</h1>"
+    return "os.getenv('user')"
 
 	
 @app.route('/api/v1/users/all', methods=['GET'])
