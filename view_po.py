@@ -10,7 +10,7 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return "os.getenv('user')"
+    return os.getenv('user')
 
 	
 @app.route('/api/v1/users/all', methods=['GET'])
