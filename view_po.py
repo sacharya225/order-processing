@@ -15,9 +15,9 @@ def home():
 	
 @app.route('/api/v1/users/all', methods=['GET'])
 def api_getalluser():
-	username=os.getenv('user')
-	password=os.getenv('passwd')
-	db = MySQLdb.connect(host="172.30.42.188", user="root", passwd="root123", db="sfgdev")
+    username=os.getenv('user')
+    password=os.getenv('passwd')
+    db = MySQLdb.connect(host="172.30.42.188", user="root", passwd="root123", db="sfgdev")
     cursor = db.cursor()
     cursor.execute("select * from PURCHASE_ORDER")
     records=cursor.fetchall()
