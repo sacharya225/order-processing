@@ -17,7 +17,7 @@ def home():
 def api_getalluser():
     username=os.getenv('user')
     password=os.getenv('passwd')
-    db = MySQLdb.connect(host="172.30.226.2", user="root", passwd="root123", db="sfgdev")
+    db = MySQLdb.connect(host="172.30.226.2", user="root", passwd={password}, db="sfgdev") ## IP of the DB keeps changing, check in OS
     cursor = db.cursor()
     cursor.execute("select * from PURCHASE_ORDER")
     records=cursor.fetchall()
